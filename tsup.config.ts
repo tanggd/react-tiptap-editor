@@ -19,4 +19,8 @@ export default defineConfig({
     banner: {
         js: bannerText,
     },
+    loader: {
+        '.css': 'empty',
+        '.less': 'empty',
+    },
 });

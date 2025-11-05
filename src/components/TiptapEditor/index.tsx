@@ -24,9 +24,7 @@ export const TiptapEditor = (props: TiptapEditorProps) => {
 		content: value,
 		editable,
 		extensions: [
-			StarterKit.configure({
-				table: true,
-			}),
+			StarterKit,
 			Underline,
 			Link,
 			Image,

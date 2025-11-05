@@ -1,6 +1,6 @@
 {
     "name": "@tanggd/react-tiptap-editor",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A rich text editor based on tiptap and react",
     "license": "MIT",
     "repository": {
@@ -31,19 +31,21 @@
     ],
     "exports": {
         ".": {
+            "types": "./dist/index.d.ts",
             "import": "./dist/index.js",
             "require": "./dist/index.cjs"
         },
-        "./dist/style.css": "./dist/style.css"
+        "./style.css": "./dist/style.css"
     },
     "scripts": {
         "dev": "vite",
-        "build": "tsup",
+        "build": "tsup && vite build -c vite.style.config.ts",
         "preview": "vite preview",
         "lint": "eslint 'src/**' --ext .ts,.tsx",
         "format": "prettier --write 'src/**/*.{ts,tsx,css,less,md}'",
         "stylelint": "stylelint 'src/**/*.{less,css}' --fix",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "clean": "rimraf dist"
     },
     "dependencies": {
         "@ant-design/icons": "^6.1.0",
