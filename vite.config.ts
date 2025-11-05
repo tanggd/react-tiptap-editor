@@ -3,11 +3,19 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
+    resolve: {
+        alias: {
+            '@': '/src',
+        },
+    },
     css: {
         preprocessorOptions: {
             less: {
                 javascriptEnabled: true
             }
         }
+    },
+    server: {
+        port: 8900
     }
 });

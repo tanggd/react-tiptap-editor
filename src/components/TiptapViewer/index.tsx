@@ -1,7 +1,7 @@
 export type TiptapViewerProps = {
-  value?: string | any;
+	value?: string | any;
 };
 
 export const TiptapViewer = (props: TiptapViewerProps) => {
-  return <div>TiptapViewer</div>;
+	return <div>TiptapViewer</div>;
 };
