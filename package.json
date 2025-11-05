@@ -1,6 +1,6 @@
 {
     "name": "@tanggd/react-tiptap-editor",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/tanggd/react-tiptap-editor.git"
@@ -12,6 +12,14 @@
     "publishConfig": {
         "access": "public"
     },
+    "keywords": [
+        "react",
+        "tiptap",
+        "editor",
+        "rich-text-editor",
+        "react-tiptap-editor"
+    ],
+    "author": "tanggd",
     "type": "module",
     "main": "dist/index.cjs",
     "module": "dist/index.js",
